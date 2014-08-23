@@ -1,5 +1,5 @@
-Getting-and-Cleaning-Data
-=========================
+Getting and Cleaning Data / Course Project
+==========================================
 
 The script run_analysis.R assumes that the folder "UCI HAR Dataset" resides in the same directory.
 
