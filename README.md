@@ -33,35 +33,19 @@ In general, it does the following:
      which that line of data belongs (referring to the feature file).
    * A feature file with many columns, containing the data described in the files "features_info.txt" and 
      "features.txt" within the folder "UCI HAR Dataset".
-     
+
 2) The subject, the activity and the feature file were combined column-wise with cbind. 
    This step was done separately for the test and training data.
    The resulting two files (testData and trainData) were combined row-wise with rbind into one file named allData.
-   
+
 3) As per the course project description, the tidy data set should contain only those feature columns with 
    mean values or the standard deviation. Via the feature labels those columns are easily identifiable, 
-   as they contain "-mean()-" and "-std()-", respectively.
+   as they contain "-mean()" and "-std()", respectively.
    * Therefore the feature labels were assigned to the column names of the allData file.
    * In addition, the first column was labelled "Subject" and the second column "Activity".
    * Finally, a subData file was extracted, containing only the relevant columns as per above.
-   * The subData files contains 50 columns:
-     * Two columns for row identification, Subject and Activity.
-     * Eight different measurements:
-        * tBodyAccMag
-        * tGravityAccMag
-        * tBodyAccJerkMag
-        * tBodyGyroMag
-        * tBodyGyroJerkMag
-        * fBodyAccMag
-        * fBodyBodyAccJerkMag
-     * Per each of the eight measurements above six different sub-measures:
-        * -mean()-X
-        * -mean()-Y
-        * -mean()-Z
-        * -std()-X
-        * -std()-Y
-        * -std()-Z
-        
+   * The subData files contains 68 columns, described in the codebook.
+
 4) To assigne the activity labels, the Activity column gets changed to class "factor".
 
 5) Via the aggregate() function the mean is calculated for the columns 3 to 50 of the subData file.
@@ -69,5 +53,5 @@ In general, it does the following:
    * During that step the column labels for the first two columns are lost (Subject and Activity).
    * As the column structure is the same, the column names of the  subData file are re-used and assigned
      to the column names of the tidyData file.
-     
+
 6) Finally, the tidyData is written to the file "GettingAndCleaningData_CourseProject_tidyData.txt".
