@@ -7,16 +7,16 @@ As per the course project description the R script does not include downloading 
 
 The following code can be used for those preparational steps:
 ___________________________________________________________________________________________________________
-# Set the working directory. To do so, replace "foo/bar" by an appropriate path.
+* Set the working directory. To do so, replace "foo/bar" by an appropriate path.
 setwd("foo/bar")
 
-# Create variable with the file URL
+* Create variable with the file URL
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
-# Download file to working directory
+* Download file to working directory
 download.file(fileUrl, destfile = "rawData.zip")
 
-# Unzip the downloaded file
+* Unzip the downloaded file
 unzip("rawData.zip")
 ___________________________________________________________________________________________________________
 
