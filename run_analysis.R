@@ -54,9 +54,9 @@ selectedColumns[1:2] <- T
 # by "selectedColumns". 
 subData <- allData[,selectedColumns]
 
-# Clean column labels within subData file
-colnames(subData) <- gsub("\\()", "", colnames(subData))
-colnames(subData) <- gsub("-", "_", colnames(subData))
+
+
+
 
 # Change second column to class "factor" and assigne activity labels
 subData$Activity <- factor(subData$Activity, levels = c(1:6), 
@@ -77,6 +77,10 @@ tidyData <- aggregate(subData[,3:length(subData[1,])],
 # This is necessary because of the aggregate function().
 # As column 1 and 2 were not aggregated, the column names for them got lost.
 colnames(tidyData) <- colnames(subData)
+
+
+
+
 
 # Write tidyData to working directory
 write.table(tidyData, 
