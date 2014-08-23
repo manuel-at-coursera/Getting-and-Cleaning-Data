@@ -8,16 +8,16 @@ As per the course project description the R script does not include downloading 
 The following code can be used for those preparational steps:
 ___________________________________________________________________________________________________________
 * Set the working directory. To do so, replace "foo/bar" by an appropriate path.
-  setwd("foo/bar")
+  * setwd("foo/bar")
 
 * Create variable with the file URL
-  fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+  * fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 * Download file to working directory
-  download.file(fileUrl, destfile = "rawData.zip")
+  * download.file(fileUrl, destfile = "rawData.zip")
 
 * Unzip the downloaded file
-  unzip("rawData.zip")
+  * unzip("rawData.zip")
 ___________________________________________________________________________________________________________
 
 The run_analysis.R file itself contains a detailed step-by-step description.
@@ -53,13 +53,13 @@ In general, it does the following:
         * tBodyGyroJerkMag
         * fBodyAccMag
         * fBodyBodyAccJerkMag
-     ** Per each of the eight measurements above six different sub-measures:
-        *** -mean()-X
-        *** -mean()-Y
-        *** -mean()-Z
-        *** -std()-X
-        *** -std()-Y
-        *** -std()-Z
+     * Per each of the eight measurements above six different sub-measures:
+        * -mean()-X
+        * -mean()-Y
+        * -mean()-Z
+        * -std()-X
+        * -std()-Y
+        * -std()-Z
         
 4) To assigne the activity labels, the Activity column gets changed to class "factor".
 
