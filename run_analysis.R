@@ -45,8 +45,8 @@ colnames(allData) <- columnLabels
 
 # Create vector which is "TRUE" for all columns containing "-mean()-" or 
 # "-std()-" measures, plus "Subject" (first column) and "Activity" (second column)
-mean <- grepl("-mean()-", colnames(allData), fixed=T)
-std <- grepl("-std()-", colnames(allData), fixed=T)
+mean <- grepl("-mean()", colnames(allData), fixed=T)
+std <- grepl("-std()", colnames(allData), fixed=T)
 selectedColumns <- mean | std
 selectedColumns[1:2] <- T
 
