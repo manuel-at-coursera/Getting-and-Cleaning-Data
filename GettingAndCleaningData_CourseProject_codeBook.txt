@@ -1,0 +1,88 @@
+Column 1: Subject
+* This column contains numeric values from 1 to 30.
+* Assignes the number of the participant (subject) to whom the row of data belongs.
+
+Column 2: Activity
+* Per row, this column contains one of the following character values:
+  * walking
+  * walking_upstairs
+  * walking_downstairs
+  * sitting
+  * standing
+  * laying
+* Assignes the activity to which the row of data belongs.
+  
+The remaining columns (3 to 68) contain numeric values with the following characteristics:
+* They are obtained from a accelerometer ("Acc") or a gyroscope ("Gyro").
+* They contain the X-, Y- or Z-axis component ("-X", "-Y", "-Z") or the magnitude of the corresponding value ("Mag").
+* They contain the mean ("mean()") value or the standard deviation ("std()").
+* The value refers to the body movement of the subject ("Body") or to the gravity ("Gravity").
+* "Jerk" assignes jerk signals.
+* Some column labels start with "f" (instead of "t"), assigning that those values were obtained by a Fast Fourier Transform.
+
+Column 3: tBodyAcc-mean()-X
+Column 4: tBodyAcc-mean()-Y
+Column 5: tBodyAcc-mean()-Z
+Column 6: tBodyAcc-std()-X
+Column 7: tBodyAcc-std()-Y
+Column 8: tBodyAcc-std()-Z
+Column 9: tGravityAcc-mean()-X
+Column 10: tGravityAcc-mean()-Y
+Column 11: tGravityAcc-mean()-Z
+Column 12: tGravityAcc-std()-X
+Column 13: tGravityAcc-std()-Y
+Column 14: tGravityAcc-std()-Z
+Column 15: tBodyAccJerk-mean()-X
+Column 16: tBodyAccJerk-mean()-Y
+Column 17: tBodyAccJerk-mean()-Z
+Column 18: tBodyAccJerk-std()-X
+Column 19: tBodyAccJerk-std()-Y
+Column 20: tBodyAccJerk-std()-Z
+Column 21: tBodyGyro-mean()-X
+Column 22: tBodyGyro-mean()-Y
+Column 23: tBodyGyro-mean()-Z
+Column 24: tBodyGyro-std()-X
+Column 25: tBodyGyro-std()-Y
+Column 26: tBodyGyro-std()-Z
+Column 27: tBodyGyroJerk-mean()-X
+Column 28: tBodyGyroJerk-mean()-Y
+Column 29: tBodyGyroJerk-mean()-Z
+Column 30: tBodyGyroJerk-std()-X
+Column 31: tBodyGyroJerk-std()-Y
+Column 32: tBodyGyroJerk-std()-Z
+Column 33: tBodyAccMag-mean()
+Column 34: tBodyAccMag-std()
+Column 35: tGravityAccMag-mean()
+Column 36: tGravityAccMag-std()
+Column 37: tBodyAccJerkMag-mean()
+Column 38: tBodyAccJerkMag-std()
+Column 39: tBodyGyroMag-mean()
+Column 40: tBodyGyroMag-std()
+Column 41: tBodyGyroJerkMag-mean()
+Column 42: tBodyGyroJerkMag-std()
+Column 43: fBodyAcc-mean()-X
+Column 44: fBodyAcc-mean()-Y
+Column 45: fBodyAcc-mean()-Z
+Column 46: fBodyAcc-std()-X
+Column 47: fBodyAcc-std()-Y
+Column 48: fBodyAcc-std()-Z
+Column 49: fBodyAccJerk-mean()-X
+Column 50: fBodyAccJerk-mean()-Y
+Column 51: fBodyAccJerk-mean()-Z
+Column 52: fBodyAccJerk-std()-X
+Column 53: fBodyAccJerk-std()-Y
+Column 54: fBodyAccJerk-std()-Z
+Column 55: fBodyGyro-mean()-X
+Column 56: fBodyGyro-mean()-Y
+Column 57: fBodyGyro-mean()-Z
+Column 58: fBodyGyro-std()-X
+Column 59: fBodyGyro-std()-Y
+Column 60: fBodyGyro-std()-Z
+Column 61: fBodyAccMag-mean()
+Column 62: fBodyAccMag-std()
+Column 63: fBodyBodyAccJerkMag-mean()
+Column 64: fBodyBodyAccJerkMag-std()
+Column 65: fBodyBodyGyroMag-mean()
+Column 66: fBodyBodyGyroMag-std()
+Column 67: fBodyBodyGyroJerkMag-mean()
+Column 68: fBodyBodyGyroJerkMag-std()
