@@ -18,6 +18,7 @@ ________________________________________________________________________________
 
 * Unzip the downloaded file
   * unzip("rawData.zip")
+
 ___________________________________________________________________________________________________________
 
 The run_analysis.R file itself contains a detailed step-by-step description.
